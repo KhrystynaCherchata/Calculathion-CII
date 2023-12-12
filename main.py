@@ -22,3 +22,9 @@ if __name__ == "__main__":
     year = 2024
     dwt = 69800
     print(run(co2_emission, distance, ship_type, year, dwt=dwt))
+
+#- g1 and g2 are called with parameters co2_emission, distance, dwt, and gt.
+# - g3 is called with parameters year and the result of g2.
+# - If results from g1, g2, and g3 exist, then g4 is
+# called with parameters ship_type, results from g3 and g1,
+# and dwt. The result from g4 is returned from the function.

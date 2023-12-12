@@ -122,3 +122,23 @@ def g4(ship_type: str, result_g3: float, result_g1: float, dwt: float | None):
         return "D"
     else:
         return "E"
+
+
+#1. *lng_carrier_d_values and gas_carrier_d_values Functions:*
+# - These functions take a dwt_value (deadweight tonnage) as input.
+# - Based on the dwt_value, they calculate and return four values
+# (d1, d2, d3, d4) specific to LNG carriers and gas carriers.
+# 2. *d_values_fun Dictionary:*
+# - Associates ship types ("gas carrier" or "lng carrier")
+# with their respective functions (gas_carrier_d_values or lng_carrier_d_values).
+# 3. *d_values Dictionary:*
+# - Defines dictionaries for various ship types (e.g., "bulk carrier," "tanker," etc.).
+# - Each ship type dictionary contains values (d1, d2, d3, d4) associated with G1 and G3 parameters.
+# 4. *g4 Function:*
+# - Takes parameters ship_type, result_g3, result_g1, and dwt.
+# - Determines d1, d2, d3, d4 based on the ship type using the dictionaries.
+# - Calculates values a, b, c, and d based on result_g3 and the calculated d values.
+# - Compares result_g1 with these calculated values and returns a classification ("A," "B," "C," "D," or "E").
+# The script seems to be part of a larger system for assessing ships,
+# considering deadweight tonnage, G1, and G3 parameters to classify them into categories.
+# If you have specific questions or if there's something specific you'd like to understand or modify, feel free to ask!
